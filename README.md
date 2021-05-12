@@ -1,3 +1,4 @@
 - [Create React App](https://github.com/facebook/create-react-app)
 - [ESlint](https://github.com/eslint/eslint)
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [ESLint-plugin-React](https://github.com/yannickcr/eslint-plugin-react)
