@@ -13,7 +13,6 @@ export default {
   args: {
     label: 'default',
   },
-};
   decorators: [
     (Story) => (
       <>
@@ -31,6 +30,7 @@ export default {
       ],
     },
   },
+} as Meta;
 
 const Template: Story<ComponentProps<typeof MyButton>> = (args) => (
   <MyButton {...args} />
