@@ -20,7 +20,7 @@ yarn add -D eslint-plugin-react-hooks
 
 edit eslint config
 
-```JSON
+``` JavaScript
 {
   "extends": [
     // ...
