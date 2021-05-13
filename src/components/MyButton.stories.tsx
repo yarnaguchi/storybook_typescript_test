@@ -45,7 +45,7 @@ Primary.args = {
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  variant: 'contained',
+  ...Primary.args,
   color: 'secondary',
   label: 'Secondary Button',
 };
