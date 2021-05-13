@@ -1,12 +1,8 @@
-import { Button } from '@material-ui/core';
 import React from 'react';
+import MyButton from './components/MyButton';
 
-function App() {
-  return (
-    <Button variant="contained" color="primary">
-      Primary
-    </Button>
-  );
-}
+const App: React.VFC = () => {
+  return <MyButton variant="contained" color="primary" label="Primary Button" />;
+};
 
 export default App;
