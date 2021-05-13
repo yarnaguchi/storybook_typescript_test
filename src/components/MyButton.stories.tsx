@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import { Story } from '@storybook/react';
-import { MyButton, Props } from './MyButton';
+import { MyButton } from './MyButton';
 import 'fontsource-roboto';
 
 // https://storybook.js.org/docs/react/api/csf
@@ -14,7 +14,9 @@ export default {
   },
 };
 
-const Template: Story<Props> = (args) => <MyButton {...args} />;
+const Template: Story<ComponentProps<typeof MyButton>> = (args) => (
+  <MyButton {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {
