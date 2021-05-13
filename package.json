@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
+  "homepage": "https://yamaguchiryuta.github.io/storybook_typescript_test/",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
@@ -26,7 +27,8 @@
     "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy": "yarn run build-storybook & gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -71,6 +73,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.1.0"
   }
 }
