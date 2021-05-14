@@ -26,7 +26,7 @@ const Template: Story<
   ComponentProps<typeof PassPropState2> & { defaultValue: string }
 > = (args) => {
   const { defaultValue, ...passArgs } = args;
-  const [value, setValue] = useState<string>(args.defaultValue);
+  const [value, setValue] = useState<string>(defaultValue);
   return <PassPropState2 {...{ state: [value, setValue] }} {...passArgs} />;
 };
 
