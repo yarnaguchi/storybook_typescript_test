@@ -2,19 +2,19 @@
 
 - [Create React App](https://github.com/facebook/create-react-app)
 
-```sh
+```bash
 npx create-react-app my-app --template typescript
 ```
 
 - [ESlint](https://github.com/eslint/eslint)
 
-```sh
+```bash
 eslint --init
 ```
 
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 
-```sh
+```bash
 yarn add -D eslint-plugin-react-hooks
 ```
 
@@ -48,7 +48,7 @@ edit eslint config
 
 - [ESLint-plugin-React](https://github.com/yannickcr/eslint-plugin-react)
 
-```sh
+```bash
 yarn add -D eslint-plugin-react
 ```
 
@@ -65,7 +65,7 @@ edit eslint config
 
 - [Material-UI](https://github.com/mui-org/material-ui)
 
-```sh
+```bash
 yarn add @material-ui/core @material-ui/icons fontsource-roboto
 ```
 
@@ -77,7 +77,7 @@ import 'fontsource-roboto';
 
 - [Storybook](https://github.com/storybookjs/storybook)
 
-```sh
+```bash
 npx sb init
 
 # Starts Storybook in development mode
@@ -98,7 +98,7 @@ edit .gitignore
 
 - [gh-pages](https://github.com/tschaub/gh-pages)
 
-```sh
+```bash
 yarn add -D gh-pages
 ```
 
