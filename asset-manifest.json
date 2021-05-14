@@ -1,28 +1,28 @@
 {
   "files": {
-    "0.65e6a1d1.iframe.bundle.js": "./0.65e6a1d1.iframe.bundle.js",
-    "main.js": "./main.7e103fdc.iframe.bundle.js",
-    "runtime~main.js": "./runtime~main.c3c7bada.iframe.bundle.js",
+    "0.248ca4bc.iframe.bundle.js": "./0.248ca4bc.iframe.bundle.js",
+    "main.js": "./main.4fcb8c5a.iframe.bundle.js",
+    "runtime~main.js": "./runtime~main.642750dc.iframe.bundle.js",
     "vendors~main.css": "./static/css/vendors~main.405c93a1.chunk.css",
-    "vendors~main.js": "./vendors~main.e5869b02.iframe.bundle.js",
+    "vendors~main.js": "./vendors~main.ba82f291.iframe.bundle.js",
     "vendors~main.css.map": "./static/css/vendors~main.405c93a1.chunk.css.map",
-    "vendors~main.js.map": "./vendors~main.e5869b02.iframe.bundle.js.map",
-    "4.b26515cf.iframe.bundle.js": "./4.b26515cf.iframe.bundle.js",
-    "4.b26515cf.iframe.bundle.js.map": "./4.b26515cf.iframe.bundle.js.map",
-    "5.adbd9603.iframe.bundle.js": "./5.adbd9603.iframe.bundle.js",
-    "6.6f7a158d.iframe.bundle.js": "./6.6f7a158d.iframe.bundle.js",
-    "6.6f7a158d.iframe.bundle.js.map": "./6.6f7a158d.iframe.bundle.js.map",
-    "7.a23d709f.iframe.bundle.js": "./7.a23d709f.iframe.bundle.js",
-    "4.b26515cf.iframe.bundle.js.LICENSE.txt": "./4.b26515cf.iframe.bundle.js.LICENSE.txt",
-    "6.6f7a158d.iframe.bundle.js.LICENSE.txt": "./6.6f7a158d.iframe.bundle.js.LICENSE.txt",
+    "vendors~main.js.map": "./vendors~main.ba82f291.iframe.bundle.js.map",
+    "4.c68bac5e.iframe.bundle.js": "./4.c68bac5e.iframe.bundle.js",
+    "4.c68bac5e.iframe.bundle.js.map": "./4.c68bac5e.iframe.bundle.js.map",
+    "5.a43cd7d2.iframe.bundle.js": "./5.a43cd7d2.iframe.bundle.js",
+    "6.ca91b4a8.iframe.bundle.js": "./6.ca91b4a8.iframe.bundle.js",
+    "6.ca91b4a8.iframe.bundle.js.map": "./6.ca91b4a8.iframe.bundle.js.map",
+    "7.6319777c.iframe.bundle.js": "./7.6319777c.iframe.bundle.js",
+    "4.c68bac5e.iframe.bundle.js.LICENSE.txt": "./4.c68bac5e.iframe.bundle.js.LICENSE.txt",
+    "6.ca91b4a8.iframe.bundle.js.LICENSE.txt": "./6.ca91b4a8.iframe.bundle.js.LICENSE.txt",
     "iframe.html": "./iframe.html",
     "static/media/index.css": "./static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
-    "vendors~main.e5869b02.iframe.bundle.js.LICENSE.txt": "./vendors~main.e5869b02.iframe.bundle.js.LICENSE.txt"
+    "vendors~main.ba82f291.iframe.bundle.js.LICENSE.txt": "./vendors~main.ba82f291.iframe.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.c3c7bada.iframe.bundle.js",
+    "runtime~main.642750dc.iframe.bundle.js",
     "static/css/vendors~main.405c93a1.chunk.css",
-    "vendors~main.e5869b02.iframe.bundle.js",
-    "main.7e103fdc.iframe.bundle.js"
+    "vendors~main.ba82f291.iframe.bundle.js",
+    "main.4fcb8c5a.iframe.bundle.js"
   ]
 }
