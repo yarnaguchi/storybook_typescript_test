@@ -21,4 +21,6 @@ const Template: Story<ComponentProps<typeof Graph>> = (args) => (
 );
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  
+};
