@@ -3,7 +3,7 @@
 - [Create React App](https://github.com/facebook/create-react-app)
 
 ```bash
-npx create-react-app my-app --template typescript
+npx create-react-app storybook_typescript_test --template typescript
 ```
 
 - [ESlint](https://github.com/eslint/eslint)
