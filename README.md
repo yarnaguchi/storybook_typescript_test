@@ -9,7 +9,8 @@ npx create-react-app storybook_typescript_test --template typescript
 - [ESlint](https://github.com/eslint/eslint)
 
 ```bash
-eslint --init
+yarn add eslint --dev
+yarn run eslint --init
 ```
 
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
@@ -20,7 +21,7 @@ yarn add -D eslint-plugin-react-hooks
 
 edit eslint config
 
-``` JavaScript
+```JavaScript
 {
   "extends": [
     // ...
@@ -60,6 +61,33 @@ edit eslint config
     "eslint:recommended",
     "plugin:react/recommended"
   ]
+}
+```
+
+- [Prettier](https://github.com/prettier/prettier)
+
+```
+yarn add --dev --exact prettier
+echo {}> .prettierrc.json
+```
+
+edit .prettierrc.json
+
+```JSON
+{
+  "singleQuote": true,
+  "trailingComma": "all"
+}
+```
+
+edit package.json
+
+```JavaScript
+{
+  "scripts": {
+    // ...
+    "prettier": "prettier --write ."
+  }
 }
 ```
 
