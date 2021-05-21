@@ -14,6 +14,10 @@ export default {
       </>
     ),
   ],
+  argTypes: {
+    dateFrom: { control: { type: 'date' } },
+    dateTo: { control: { type: 'date' } },
+  },
 } as Meta;
 
 const Template: Story<ComponentProps<typeof Graph>> = (args) => (
@@ -22,5 +26,11 @@ const Template: Story<ComponentProps<typeof Graph>> = (args) => (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  
+  dateFrom: new Date(),
+  dateTo: new Date(),
+  timeSum: 100,
+  timeA: 10,
+  timeB: 20,
+  timeC: 30,
+  timeD: 40,
 };

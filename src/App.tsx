@@ -54,7 +54,17 @@ const App: React.VFC = () => {
       <Divider />
       <DatePicker />
       <Divider />
-      <Graph />
+      <Graph
+        {...{
+          dateFrom: new Date(),
+          dateTo: new Date(),
+          timeSum: 100,
+          timeA: 10,
+          timeB: 20,
+          timeC: 30,
+          timeD: 40,
+        }}
+      />
       <Divider />
       <MyButton
         variant="contained"
