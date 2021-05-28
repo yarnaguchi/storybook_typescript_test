@@ -18,7 +18,7 @@ edit package.json
 {
   "scripts": {
     // ...
-    "test": "react-scripts test --watchAll",
+    "test watchAll": "react-scripts test --watchAll",
     "coverage": "yarn test -- --coverage"
   },
   "jest": {
@@ -203,6 +203,44 @@ edit package.json
   }
 }
 ```
+
+### CI
+
+.github/workflows/main.yml
+
+```YAML
+name: CI
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+          architecture: x64
+      - name: Install Dependencies
+        run: yarn install
+      - name: Run test
+        run: yarn test
+```
+
+---
+
+```math
+F(s)=\int_{0}^{\infty}f(t)e^{-st}dt
+```
+
+---
 
 ### Deploy
 
