@@ -1,9 +1,36 @@
+[![CI](https://github.com/YamaguchiRyuta/storybook_typescript_test/actions/workflows/main.yml/badge.svg)](https://github.com/YamaguchiRyuta/storybook_typescript_test/actions/workflows/main.yml)
+
+### 参考
+
+- [Running Tests](https://create-react-app.dev/docs/running-tests/)
+
 ### 環境作成
 
 - [Create React App](https://github.com/facebook/create-react-app)
 
 ```bash
 npx create-react-app storybook_typescript_test --template typescript
+```
+
+edit package.json
+
+```JavaScript
+{
+  "scripts": {
+    // ...
+    "test": "react-scripts test --watchAll",
+    "coverage": "yarn test -- --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!**/*.d.{js,jsx,ts,tsx}",
+      "!**/*.stories.{js,jsx,ts,tsx}",
+      "!**/__snapshots__/**",
+      "!**/node_modules/**"
+    ]
+  }
+}
 ```
 
 - [ESlint](https://github.com/eslint/eslint)
@@ -23,6 +50,11 @@ edit eslint config
 
 ```JavaScript
 {
+  "env": {
+    // ...
+    'jest/globals': true,
+    node: true,
+  },
   "extends": [
     // ...
     "plugin:react-hooks/recommended"
@@ -60,7 +92,37 @@ edit eslint config
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
-  ]
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+  },
+}
+```
+
+- [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#readme)
+
+```bash
+yarn add --dev eslint eslint-plugin-jest
+```
+
+edit eslint config
+
+```JSON
+{
+  "env": {
+    "jest/globals": true
+  },
+  "extends": [
+    "plugin:jest/recommended",
+    "plugin:jest/style"
+  ],
+  "rules": {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  }
 }
 ```
 
@@ -76,7 +138,8 @@ edit .prettierrc.json
 ```JSON
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "jsxSingleQuote": true
 }
 ```
 
@@ -86,7 +149,7 @@ edit package.json
 {
   "scripts": {
     // ...
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write . !build/**/* !coverage/**/* !public/**/* !storybook-static/**/*"
   }
 }
 ```

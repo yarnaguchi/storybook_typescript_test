@@ -2,9 +2,12 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    'jest/globals': true,
+    node: true,
   },
   extends: [
     'plugin:react/recommended',
+    'eslint:recommended',
     'plugin:react-hooks/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jest/recommended',
